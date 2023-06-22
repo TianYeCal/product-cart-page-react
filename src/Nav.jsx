@@ -211,6 +211,7 @@ const Wrapper = styled.nav`
   }
   .menu {
     display: none;
+    cursor: pointer;
   }
   @media (max-width: 768px) {
     margin-bottom: 0;
