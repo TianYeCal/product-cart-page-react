@@ -104,7 +104,7 @@ const Product = () => {
             </button>
             <p className="num">{amount}</p>
             <button disabled={showCart} onClick={() => dispatch(increase())}>
-              <img src={plus} alt="plus" />
+              <img src={plus} alt="plus" className="plus" />
             </button>
           </div>
           <button
@@ -245,6 +245,11 @@ const Wrapper = styled.section`
     flex-direction: column;
     /* justify-content: space-between; */
     /* align-items: center; */
+  }
+  .minus,
+  .plus {
+    border: none;
+    background: transparent;
   }
   @media (max-width: 768px) {
     display: flex;
